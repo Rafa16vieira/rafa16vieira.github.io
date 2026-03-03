@@ -1,0 +1,45 @@
+{
+  "name": "DataRecord",
+  "type": "object",
+  "properties": {
+    "city": {
+      "type": "string",
+      "description": "City name"
+    },
+    "leader": {
+      "type": "string",
+      "description": "Leader's name"
+    },
+    "coordinator": {
+      "type": "string",
+      "description": "Coordinator's name"
+    },
+    "insertion_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date of insertion"
+    },
+    "motivation": {
+      "type": "string",
+      "description": "Motivation category"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "solved"
+      ],
+      "default": "pending"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "city",
+    "leader",
+    "coordinator",
+    "insertion_date",
+    "motivation"
+  ]
+}
